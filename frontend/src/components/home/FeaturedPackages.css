@@ -1,0 +1,39 @@
+.featured-pkgs {
+  background: var(--color-bg-alt);
+}
+
+.featured-pkgs__scroll {
+  display: flex;
+  gap: var(--space-6);
+  overflow-x: auto;
+  padding-bottom: var(--space-4);
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-300) transparent;
+}
+
+.featured-pkgs__scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.featured-pkgs__scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.featured-pkgs__scroll::-webkit-scrollbar-thumb {
+  background: var(--color-gray-300);
+  border-radius: var(--radius-full);
+}
+
+.featured-pkgs__scroll > * {
+  scroll-snap-align: start;
+}
+
+@media (min-width: 1280px) {
+  .featured-pkgs__scroll {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    justify-content: center;
+  }
+}

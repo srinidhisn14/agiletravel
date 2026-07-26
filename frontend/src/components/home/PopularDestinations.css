@@ -1,0 +1,28 @@
+.popular-dest {
+  background: var(--color-white);
+}
+
+.popular-dest__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 640px) {
+  .popular-dest__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .popular-dest__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+  }
+}
+
+@media (min-width: 1280px) {
+  .popular-dest__grid {
+    gap: var(--space-8);
+  }
+}
