@@ -1,0 +1,195 @@
+.pkg-listing-card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: box-shadow var(--transition-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.pkg-listing-card:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.pkg-listing-card__image-wrap {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.pkg-listing-card__image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.pkg-listing-card:hover .pkg-listing-card__image-wrap img {
+  transform: scale(1.05);
+}
+
+.pkg-listing-card__rating {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  background: rgba(255, 255, 255, 0.95);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-gray-800);
+}
+
+.pkg-listing-card__rating svg {
+  color: var(--color-accent);
+  font-size: 0.75rem;
+}
+
+.pkg-listing-card__body {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.pkg-listing-card__duration {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.pkg-listing-card__title {
+  font-size: var(--font-size-xl);
+  color: var(--color-gray-900);
+  margin-bottom: var(--space-2);
+  line-height: 1.25;
+}
+
+.pkg-listing-card__destination {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-bottom: var(--space-1);
+}
+
+.pkg-listing-card__room {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.pkg-listing-card__facilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.pkg-listing-card__facility {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-600);
+  background: var(--color-gray-100);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+}
+
+.pkg-listing-card__facility svg {
+  color: var(--color-primary);
+  font-size: 0.7rem;
+}
+
+.pkg-listing-card__highlights {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+  flex: 1;
+}
+
+.pkg-listing-card__highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  line-height: 1.4;
+}
+
+.pkg-listing-card__highlights svg {
+  color: var(--color-primary);
+  font-size: 0.7rem;
+  margin-top: 0.3rem;
+  flex-shrink: 0;
+}
+
+.pkg-listing-card__footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: auto;
+}
+
+.pkg-listing-card__pricing {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.pkg-listing-card__original {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-400);
+  text-decoration: line-through;
+}
+
+.pkg-listing-card__price {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-gray-900);
+}
+
+.pkg-listing-card__per-person {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.pkg-listing-card__savings {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-primary);
+  background: rgba(13, 148, 136, 0.1);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+}
+
+.pkg-listing-card__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-gray-900);
+  color: var(--color-white);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  transition: background var(--transition-base), transform var(--transition-base);
+  width: 100%;
+}
+
+.pkg-listing-card__cta:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+}

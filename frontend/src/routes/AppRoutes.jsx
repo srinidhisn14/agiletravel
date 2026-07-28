@@ -10,6 +10,8 @@ import Contact from '../pages/Contact'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
 import NotFound from '../pages/NotFound'
+import Payment from '../pages/Payment'
+import Confirmation from '../pages/Confirmation'
 
 export default function AppRoutes() {
   return (
@@ -19,6 +21,8 @@ export default function AppRoutes() {
         <Route path="destinations" element={<Destinations />} />
         <Route path="packages" element={<Packages />} />
         <Route path="booking" element={<Booking />} />
+        <Route path="payment" element={<Payment />} />
+        <Route path="confirmation" element={<Confirmation />} />
         <Route path="my-trips" element={<MyTrips />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />

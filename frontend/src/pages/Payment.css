@@ -1,0 +1,16 @@
+.payment-page__layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .payment-page__layout {
+    grid-template-columns: 1fr 340px;
+  }
+}
+
+.payment-page__form {
+  min-width: 0;
+}
