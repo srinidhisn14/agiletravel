@@ -15,7 +15,7 @@ const initialFormData = {
   checkIn: '',
   checkOut: '',
   travellers: '2',
-  roomPreference: 'Deluxe',
+  roomPreference: 'Del',
   specialRequests: '',
   foodPreference: 'None',
   travelPurpose: 'Leisure',
