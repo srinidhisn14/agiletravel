@@ -18,7 +18,7 @@ const initialFormData = {
   roomPreference: 'Del',
   specialRequests: '',
   foodPreference: 'None',
-  travelPurpose: 'Leisure',
+  travelPurpose: 'Branch creation new',
 }
 
 export default function Booking() {
