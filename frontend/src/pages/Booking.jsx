@@ -17,7 +17,7 @@ const initialFormData = {
   travellers: '2',
   roomPreference: 'Del',
   specialRequests: '',
-  foodPreference: 'None',
+  foodPreference: 'veg or non veg',
   travelPurpose: 'Branch creation new',
 }
 
