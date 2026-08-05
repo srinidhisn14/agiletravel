@@ -15,10 +15,10 @@ const initialFormData = {
   checkIn: '',
   checkOut: '',
   travellers: '2',
-  roomPreference: 'Del',
+  roomPreference: 'finaloneeeeee',
   specialRequests: '',
   foodPreference: 'veg or non veg',
-  travelPurpose: 'Branch creation new',
+  travelPurpose: 'branch creation new',
 }
 
 export default function Booking() {
