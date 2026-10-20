@@ -19,3 +19,16 @@ spec:
           ports:
             - containerPort: 80
           imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: agiletravel-service
+spec:
+  type: NodePort
+  selector:
+    app: agiletravel
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30080
