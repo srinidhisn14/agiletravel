@@ -1,0 +1,21 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: agiletravel
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: agiletravel
+  template:
+    metadata:
+      labels:
+        app: agiletravel
+    spec:
+      containers:
+        - name: agiletravel
+          image: sri1451/agiletravel:latest
+          ports:
+            - containerPort: 80
+          imagePullPolicy: Always
